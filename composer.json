@@ -1,0 +1,42 @@
+{
+    "name": "tomatophp/filament-developer-tools",
+    "type": "library",
+    "description": "Developer tools to manage and build apps on FilamentPHP",
+    "keywords": [
+        "php",
+        "laravel",
+        "developer-tools",
+        "filament",
+        "database manager",
+        "REST API Tester",
+        "icons manager"
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "TomatoPHP\\FilamentDeveloperTools\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TomatoPHP\\FilamentDeveloperTools\\FilamentDeveloperToolsServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Fady Mondy",
+            "email": "info@3x1.io"
+        }
+    ],
+    "require": {
+        "php": "^8.1|^8.2",
+        "tomatophp/console-helpers": "^1.1"
+    }
+}
